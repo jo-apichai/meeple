@@ -1,1 +1,7 @@
-<h1>Merry Meeple</h1>
+<div class="grid-container">
+  <h1><%= t '.recent_games' %></h1>
+
+  <div class="grid-x grid-margin-x grid-margin-y large-up-5">
+    <%= render @games %>
+  </div>
+</div>

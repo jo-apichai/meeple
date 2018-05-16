@@ -41,6 +41,10 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Human-friendly ID
 gem 'friendly_id', '~> 5.1.0'
 
+# Foundation framework
+gem 'foundation-rails', '~> 6.4.3'
+gem 'autoprefixer-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
