@@ -2,3 +2,7 @@ en:
   home:
     show:
       recent_games: 'Recent Games'
+  shared:
+    email: 'Email'
+    password: 'Password'
+    sign_in: 'Sign In'

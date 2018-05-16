@@ -41,6 +41,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Human-friendly ID
 gem 'friendly_id', '~> 5.1.0'
 
+# Authentication
+gem 'devise'
+
 # Foundation framework
 gem 'foundation-rails', '~> 6.4.3'
 gem 'autoprefixer-rails'
