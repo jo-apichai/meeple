@@ -1,3 +1,10 @@
-Admin Dashboard
-
-<%= link_to 'Sign out', destroy_admin_session_path, method: :delete %>
+<div class="grid-container dashboard">
+  <div class="grid-x grid-margin-x large-up-6">
+    <%= link_to admin_games_path, class: 'cell large-offset-2' do %>
+      <div class="callout small text-center">
+        <%= icon 'fas', 'dice', class: 'icon' %>
+        <%= t 'admin.games.index.title' %>
+      </div>
+    <% end %>
+  </div>
+</div>

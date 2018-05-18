@@ -1,8 +1,16 @@
 en:
+  admin:
+    games:
+      index:
+        title: 'Games'
   home:
     show:
       recent_games: 'Recent Games'
+  layouts:
+    admin_header:
+      dashboard: 'Dashboard'
   shared:
     email: 'Email'
     password: 'Password'
     sign_in: 'Sign In'
+    sign_out: 'Sign Out'
