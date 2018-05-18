@@ -6,5 +6,12 @@
         <%= t 'admin.games.index.title' %>
       </div>
     <% end %>
+
+    <%= link_to admin_publishers_path, class: 'cell' do %>
+      <div class="callout small text-center">
+        <%= icon 'fas', 'building', class: 'icon' %>
+        <%= t 'admin.publishers.index.title' %>
+      </div>
+    <% end %>
   </div>
 </div>

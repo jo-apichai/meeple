@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :games
+    resources :publishers
 
     root 'dashboard#show'
   end

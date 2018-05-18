@@ -1,8 +1,23 @@
 en:
+  activerecord:
+    attributes:
+      game:
+        id: 'ID'
+        name: 'Name'
+        publisher: 'Publisher'
+      publisher:
+        id: 'ID'
+        name: 'Name'
+        website: 'Website'
   admin:
     games:
       index:
         title: 'Games'
+      new:
+        title: 'Add New Game'
+    publishers:
+      index:
+        title: 'Publishers'
   home:
     show:
       recent_games: 'Recent Games'

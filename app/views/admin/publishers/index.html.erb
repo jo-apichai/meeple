@@ -1,0 +1,16 @@
+<div class="grid-container">
+  <h2><%= t '.title' %></h2>
+
+  <table>
+    <thead>
+      <tr>
+        <td><%= Publisher.human_attribute_name('id') %></td>
+        <td><%= Publisher.human_attribute_name('name') %></td>
+        <td><%= Publisher.human_attribute_name('website') %></td>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render @publishers %>
+    </tbody>
+  </table>
+</div>

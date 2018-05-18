@@ -4,9 +4,14 @@
   <table>
     <thead>
       <tr>
-        <td>ID</td>
-        <td>Name</td>
-        <td>Publisher</td>
+        <td><%= Game.human_attribute_name('id') %></td>
+        <td><%= Game.human_attribute_name('name') %></td>
+        <td><%= Game.human_attribute_name('publisher') %></td>
+        <td class="text-right">
+          <%= link_to new_admin_game_path do %>
+            <%= icon 'fas', 'plus' %>
+          <% end %>
+        </td>
       </tr>
     </thead>
     <tbody>
