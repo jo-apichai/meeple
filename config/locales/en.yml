@@ -9,12 +9,23 @@ en:
         id: 'ID'
         name: 'Name'
         website: 'Website'
+    models:
+      game: Game
   admin:
     games:
+      create:
+        success: 'New game has been created successfully'
+      destroy:
+        success: 'Game has been deleted'
+      edit:
+        title:
+          'Edit Game'
       index:
         title: 'Games'
       new:
         title: 'Add New Game'
+      update:
+        success: 'Game has been updated successfully'
     publishers:
       index:
         title: 'Publishers'
@@ -25,6 +36,7 @@ en:
     admin_header:
       dashboard: 'Dashboard'
   shared:
+    confirm_delete: 'Are you sure you want to delete this %{model}?'
     email: 'Email'
     password: 'Password'
     sign_in: 'Sign In'

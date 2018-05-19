@@ -1,0 +1,10 @@
+<%= simple_form_for [:admin, @game] do |f| %>
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= f.association :publisher %>
+
+  <div>
+    <%= f.submit class: 'button primary' %>
+    <%= link_to t('shared.cancel'), admin_games_path, class: 'button secondary' %>
+  </div>
+<% end %>

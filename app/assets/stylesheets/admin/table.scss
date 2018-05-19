@@ -1,0 +1,13 @@
+table {
+  .actions {
+    text-align: right;
+
+    a {
+      margin-left: 0.5rem;
+
+      i.fa-trash {
+        color: map-get($foundation-palette, alert);
+      }
+    }
+  }
+}

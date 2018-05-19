@@ -2,5 +2,13 @@
   <td><%= game.id %></td>
   <td><%= game.name %></td>
   <td><%= game.publisher.name %></td>
-  <td></td>
+  <td class="actions">
+    <%= link_to admin_game_path(game), method: :delete,
+      data: { confirm: t('shared.confirm_delete', model: Game.model_name.human.downcase) } do %>
+      <%= icon 'fas', 'trash' %>
+    <% end %>
+    <%= link_to edit_admin_game_path(game) do %>
+      <%= icon 'fas', 'edit' %>
+    <% end %>
+  </td>
 </tr>
