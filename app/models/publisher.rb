@@ -7,8 +7,8 @@ class Publisher < ApplicationRecord
   has_many :games
 
   # Validations
-  validates :name, presence: true
-  validates :website, format: { with: URI.regexp }
+  validates :name, presence: true, uniqueness: { case_sensitive: false }
+  validates :website, format: { with: URI.regexp }, allow_blank: true
 
   private def should_generate_new_friendly_id?
     name_changed?

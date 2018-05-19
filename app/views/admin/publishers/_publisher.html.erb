@@ -2,4 +2,13 @@
   <td><%= publisher.id %></td>
   <td><%= publisher.name %></td>
   <td><%= publisher.website %></td>
+  <td class="actions">
+    <%= link_to admin_publisher_path(publisher), method: :delete,
+      data: { confirm: t('shared.confirm_delete', model: Publisher.model_name.human.downcase) } do %>
+      <%= icon 'fas', 'trash' %>
+    <% end %>
+    <%= link_to edit_admin_publisher_path(publisher) do %>
+      <%= icon 'fas', 'edit' %>
+    <% end %>
+  </td>
 </tr>

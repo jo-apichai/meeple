@@ -7,6 +7,11 @@
         <td><%= Publisher.human_attribute_name('id') %></td>
         <td><%= Publisher.human_attribute_name('name') %></td>
         <td><%= Publisher.human_attribute_name('website') %></td>
+        <td class="text-right">
+          <%= link_to new_admin_publisher_path do %>
+            <%= icon 'fas', 'plus' %>
+          <% end %>
+        </td>
       </tr>
     </thead>
     <tbody>

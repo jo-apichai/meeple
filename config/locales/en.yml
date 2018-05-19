@@ -18,8 +18,7 @@ en:
       destroy:
         success: 'Game has been deleted'
       edit:
-        title:
-          'Edit Game'
+        title: 'Edit Game'
       index:
         title: 'Games'
       new:
@@ -27,8 +26,18 @@ en:
       update:
         success: 'Game has been updated successfully'
     publishers:
+      create:
+        success: 'New publisher has been created successfully'
+      destroy:
+        success: 'Publisher has been deleted'
+      edit:
+        title: 'Edit Publisher'
       index:
         title: 'Publishers'
+      new:
+        title: 'Add New Publisher'
+      update:
+        success: 'Publisher has been updated successfully'
   home:
     show:
       recent_games: 'Recent Games'

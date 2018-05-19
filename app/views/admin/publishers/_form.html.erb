@@ -1,0 +1,9 @@
+<%= simple_form_for [:admin, @publisher] do |f| %>
+  <%= f.input :name %>
+  <%= f.input :website %>
+
+  <div>
+    <%= f.submit class: 'button primary' %>
+    <%= link_to t('shared.cancel'), admin_publishers_path, class: 'button secondary' %>
+  </div>
+<% end %>
