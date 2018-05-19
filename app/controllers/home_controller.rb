@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def show
-    @games = Game.all
+    @games = Game.page(params[:page])
   end
 end

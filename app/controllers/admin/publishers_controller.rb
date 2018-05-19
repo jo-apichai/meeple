@@ -3,7 +3,7 @@ class Admin
     before_action :find_publisher, only: [:edit, :update, :destroy]
 
     def index
-      @publishers = Publisher.all
+      @publishers = Publisher.page(params[:page])
     end
 
     def new

@@ -3,7 +3,7 @@ class Admin
     before_action :find_game, only: [:edit, :update, :destroy]
 
     def index
-      @games = Game.includes(:publisher).all
+      @games = Game.includes(:publisher).page(params[:page])
     end
 
     def new

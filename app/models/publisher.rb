@@ -10,6 +10,9 @@ class Publisher < ApplicationRecord
   validates :name, presence: true, uniqueness: { case_sensitive: false }
   validates :website, format: { with: URI.regexp }, allow_blank: true
 
+  # Scopes
+  default_scope { order(:id) }
+
   private def should_generate_new_friendly_id?
     name_changed?
   end

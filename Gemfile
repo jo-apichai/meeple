@@ -44,6 +44,9 @@ gem 'friendly_id', '~> 5.1.0'
 # Authentication
 gem 'devise'
 
+# Pagination
+gem 'kaminari'
+
 # Foundation framework
 gem 'foundation-rails', '~> 6.4.3'
 gem 'autoprefixer-rails'
