@@ -44,7 +44,8 @@ class Admin
       params.require(:game).permit(
         :name,
         :description,
-        :publisher_id
+        :publisher_id,
+        :cover
       )
     end
   end

@@ -4,14 +4,14 @@
   <table>
     <thead>
       <tr>
-        <td><%= Publisher.human_attribute_name('id') %></td>
-        <td><%= Publisher.human_attribute_name('name') %></td>
-        <td><%= Publisher.human_attribute_name('website') %></td>
-        <td class="text-right">
+        <th><%= Publisher.human_attribute_name('id') %></th>
+        <th><%= Publisher.human_attribute_name('name') %></th>
+        <th><%= Publisher.human_attribute_name('website') %></th>
+        <th class="text-right">
           <%= link_to new_admin_publisher_path do %>
             <%= icon 'fas', 'plus' %>
           <% end %>
-        </td>
+        </th>
       </tr>
     </thead>
     <tbody>
