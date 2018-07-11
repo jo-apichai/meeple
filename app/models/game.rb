@@ -19,6 +19,12 @@ class Game < ApplicationRecord
   # Scopes
   default_scope { order(:id) }
 
+  def cover_image_url(options)
+    return "placeholder/default.png" unless cover.attached?
+
+    cover.variant(options)
+  end
+
   private def should_generate_new_friendly_id?
     name_changed?
   end

@@ -1,6 +1,4 @@
-<div class="cell">
-  <% if game.cover.attached? %>
-    <%= image_tag game.cover.variant(resize: "200x200") %>
-  <% end %>
-  <%= game.name %>
+<div class="cell game">
+  <%= image_tag game.cover_image_url(resize: '200x200'), alt: game.name, class: 'cover' %>
+  <div class="name"><%= game.name %></div>
 </div>

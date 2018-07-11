@@ -1,0 +1,14 @@
+.games-list {
+  .game {
+    text-align: center;
+
+    .cover {
+      margin-bottom: 0.5rem;
+    }
+
+    .name {
+      height: 3rem;
+      font-weight: 700;
+    }
+  }
+}
