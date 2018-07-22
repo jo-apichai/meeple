@@ -8,5 +8,7 @@ Rails.application.routes.draw do
     root 'dashboard#show'
   end
 
+  resources :games, only: :show
+
   root 'home#show'
 end

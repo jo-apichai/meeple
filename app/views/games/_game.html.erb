@@ -1,4 +1,7 @@
-<div class="cell game">
+<%= link_to game_path(game), class: 'cell game' do %>
   <%= image_tag game.cover_image_url(resize: '200x200'), alt: game.name, class: 'cover' %>
-  <div class="name"><%= game.name %></div>
-</div>
+
+  <div class="name">
+    <%= game.name %>
+  </div>
+<% end %>

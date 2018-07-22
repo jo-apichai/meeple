@@ -12,3 +12,15 @@
     }
   }
 }
+
+#game {
+  .details {
+    margin-left: 0;
+    list-style-type: none;
+
+    strong::after {
+      margin-right: 3px;
+      content: ': '
+    }
+  }
+}
